@@ -1,0 +1,42 @@
+/* Absolute units */
+h1 {
+    font-size: 32px;
+    margin: 10px;
+}
+
+/* Relative units */
+h2 {
+    font-size: 2em;
+    margin: 2%;
+}
+
+/* Group selector */
+h1, h2 {
+    color: rgb(44, 44, 152);
+}
+
+/* Descendant selector */
+div p {
+    background-color: rgb(91, 91, 20);
+    padding: 1rem;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    border: 2px solid gray;
+    padding: 5px;
+}
+
+/* Pseudo-classes */
+button:hover {
+    background-color: green;
+    color: white;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+button:active {
+    background-color: red;
+}
