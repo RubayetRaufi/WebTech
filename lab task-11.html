@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lab Task 11</title>
+</head>
+<body>
+<script>
+let courses = ["Math", "Physics", "Java", "Web Tech", "Database"];
+
+document.write("Courses:<br>");
+for(let i=0; i<courses.length; i++){
+    document.write(courses[i] + "<br>");
+}
+courses.push("AI");
+document.write("<br>After Adding Course:<br>");
+for(let i=0; i<courses.length; i++){
+    document.write(courses[i] + "<br>");
+}
+
+document.write("<br>Array Length: " + courses.length + "<br>");
+courses.pop();
+courses.unshift("English"); 
+
+document.write("Final Courses:<br>");
+for(let i=0; i<courses.length; i++){
+    document.write(courses[i] + "<br>");
+}
+
+let student = {
+    name: "Raufi",
+    id: "23-54821-3",
+    department: "CSE",
+    cgpa: 1.11
+};
+
+document.write("<br>Student Info:<br>");
+document.write("Name: " + student.name + "<br>");
+document.write("ID: " + student.id + "<br>");
+document.write("Department: " + student.department + "<br>");
+document.write("CGPA: " + student.cgpa + "<br>");
+
+let students = [
+    {name:"Rahim", id:"1", cgpa:3.5},
+    {name:"Karim", id:"2", cgpa:3.7},
+    {name:"Sumi", id:"3", cgpa:3.9}
+];
+
+document.write("<br>Student List:<br>");
+
+for(let i=0; i<students.length; i++){
+    document.write(
+        students[i].name + " | ID: " +
+        students[i].id + " | CGPA: " +
+        students[i].cgpa + "<br>"
+    );
+}
+
+</script>
+
+</body>
+</html>
