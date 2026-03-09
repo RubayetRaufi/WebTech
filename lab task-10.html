@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lab Task 10</title>
+</head>
+<body>
+<script>
+
+function calculateSum(a, b){
+    return a + b;
+}
+
+let sum = calculateSum(3, 4);
+document.write("Sum = " + sum + "<br><br>");
+
+document.write("Numbers 1 to 10:<br>");
+for(let i = 1; i <= 10; i++){
+    document.write(i + " ");
+}
+
+document.write("<br><br>");
+
+document.write("Even numbers 1 to 20:<br>");
+let n = 2;
+
+while(n <= 20){
+    document.write(n + " ");
+    n += 2;
+}
+
+document.write("<br><br>");
+
+let fullName = "Rubayet Hossain";
+
+document.write("Uppercase: " + fullName.toUpperCase() + "<br>");
+document.write("Length: " + fullName.length + "<br>");
+document.write("First Name: " + fullName.split(" ")[0] + "<br><br>");
+
+function checkLength(){
+    let text = prompt("Enter a word:");
+
+    if(text.length > 5){
+        document.write("Length is greater than 5");
+    }else{
+        document.write("Length is 5 or less");
+    }
+}
+
+checkLength();
+
+</script>
+
+</body>
+</html>
